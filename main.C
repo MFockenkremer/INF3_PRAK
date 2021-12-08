@@ -25,11 +25,12 @@
 
 using namespace std;
 
+using namespace TASK1;
 
 int main(){
-	srand(time(nullptr));
 
-    return 0;
+	demoTASK1_00();
+
 }
 
 
