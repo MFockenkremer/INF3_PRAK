@@ -23,6 +23,17 @@
 #include "TASK5.H"
 #include "TASK6.H"
 
+<<<<<<< HEAD
+
+using namespace std;
+
+
+int main(){
+	srand(time(nullptr));
+
+
+    return 0;
+=======
 using namespace std;
 
 using namespace TASK1;
@@ -31,6 +42,7 @@ int main(){
 
 	demoTASK1_00();
 
+>>>>>>> 0a80798e07c41eb3cf14f1b9e8ca006ea854299a
 }
 
 

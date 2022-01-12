@@ -154,6 +154,12 @@ void TCPserver::run(){
 
 	while(1)
 	{
+<<<<<<< HEAD
+		for(int i=0;i < maxDataSizeRecv_;i++){
+				dataRecv_[i] = '\0';
+		}
+=======
+>>>>>>> 0a80798e07c41eb3cf14f1b9e8ca006ea854299a
 		read(clintConnt_,dataRecv_, (size_t)maxDataSizeRecv_);
 		output = response(string(dataRecv_));
 		dataSend_ = output.c_str();

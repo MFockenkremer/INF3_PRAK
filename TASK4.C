@@ -10,8 +10,11 @@
 #include <string>
 #include <iostream>
 #include <unistd.h>
+<<<<<<< HEAD
+=======
 #include <cstdio>
 #include <cstdlib>
+>>>>>>> 0a80798e07c41eb3cf14f1b9e8ca006ea854299a
 
 
 #include "TASK4.H"

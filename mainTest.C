@@ -36,9 +36,15 @@ class InputTest_A : public TASK6::TestCase{
 public:
 	InputTest_A(string s) : TASK6::TestCase(s){};
 	bool testRun(){
+<<<<<<< HEAD
+		TASK1::BlackBoxSafe  bbs(4,4);
+		cout << bbs.input("XXX") << endl;
+		if( (bbs.input("XXX")).compare("DENIED") == 0 ){
+=======
 		TASK1::BlackBoxUnsafe  bbs(4,4);
 		cout << bbs.input("XXX") << endl;
 		if( (bbs.input("XXX")).compare("ACCESS DENIED") == 0 ){
+>>>>>>> 0a80798e07c41eb3cf14f1b9e8ca006ea854299a
 			return true;
 		}
 		return false;
@@ -50,8 +56,13 @@ class InputTest_B : public TASK6::TestCase{
 public:
 	InputTest_B(string s) : TASK6::TestCase(s){};
 	bool testRun(){
+<<<<<<< HEAD
+		TASK1::BlackBoxSafe  bbs(4,4);
+		if( (bbs.input(bbs.pwd_)).compare("ACCEPTED") == 0 ){
+=======
 		TASK1::BlackBoxUnsafe  bbs(4,4);
 		if( (bbs.input(bbs.pwd_)).compare("ACCESS DENIED") == 0 ){
+>>>>>>> 0a80798e07c41eb3cf14f1b9e8ca006ea854299a
 			return true;
 		}
 		return false;
@@ -62,7 +73,11 @@ public:
 int main(){
 	srand(time(nullptr));
 
+<<<<<<< HEAD
+	TASK6::UnitTest     ut("BlackBoxSafe");
+=======
 	TASK6::UnitTest     ut("BlackBoxUnsafe");
+>>>>>>> 0a80798e07c41eb3cf14f1b9e8ca006ea854299a
 	TASK6::TestSuite    tSuite("input methode");
 	InputTest_A         tA("check incorrect pwd");
 	InputTest_B         tB("check correct pwd");

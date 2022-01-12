@@ -64,7 +64,11 @@ public:
 		strContent_ = "<html><head></head><body>no data</body></html>";
 		checkSum_   = sha256(strContent_);
 		noiseRate_  = 1.0 / ((float)( (rand() % 10000) + 1));
+<<<<<<< HEAD
+		/// \todo noiseRate_ shall be parameterized in this class
+=======
 		/// \todo noiseRate_ shall be parameterizedin this class
+>>>>>>> 0a80798e07c41eb3cf14f1b9e8ca006ea854299a
 	};
 
 protected:

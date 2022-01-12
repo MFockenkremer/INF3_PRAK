@@ -48,7 +48,11 @@ mainTest:	mainTest.o
 	$(CC) -o $@ $^ TASK1.o SHA256.o -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11 -lpthread $(LIBS)
 
 server:	server.o
+<<<<<<< HEAD
+	$(CC) -o server server.o  SIMPLESOCKET.o TASK1.o SHA256.o -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11
+=======
 	$(CC) -o server server.o  SIMPLESOCKET.o -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11
+>>>>>>> 0a80798e07c41eb3cf14f1b9e8ca006ea854299a
 
 client:	client.o
 	$(CC) -o client client.o SIMPLESOCKET.o -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11
